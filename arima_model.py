@@ -57,7 +57,7 @@ d = 1 # differencing order
 q = 1  # moving average order
 
 # Define the ARIMA model
-model = ARIMA(data['Close'], order=(p, d, q))
+model = ARIMA(df_train['Close'], order=(p, d, q))
 
 try:
     model_fit = model.fit()
